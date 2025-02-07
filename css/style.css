@@ -81,7 +81,7 @@ h4{
  .logo{
     color: var(--blanco);
     margin: 0;
-    opacity:0.8;
+    opacity:1;
     font-size: 3.5rem;
 
  }
@@ -90,7 +90,7 @@ h4{
     font-weight: 400;
     color: #00FFFF;
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 4.8rem;
     opacity: 0.8;
     font-family: "Quicksand", serif;
  }
@@ -118,12 +118,10 @@ h4{
 
 .header__texto p{
     font-size: 3.8rem;
-    opacity: 2;
-    color: #00FFFF;
+    opacity: 0.9;
+    color:#fff;
 }
-h1,h2{
-    color: var(--primario);
-}
+
 
 
 .navegacion__enlace{
