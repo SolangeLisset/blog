@@ -5,11 +5,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog AnimeXperience</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/logo.jpg" />
+    <meta name="description" content="Blog de anime, review">
+    <link rel="icon" href="img/logo.webp" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--Preload-->
+
+<link rel="preload" href="css/style.css" as="style">
+<link rel="stylesheet" href="css/style.css" />
+
+
+<link rel="preload" href="css/normalize.css" as="style">
+<link rel="stylesheet" href="css/normalize.css">
+
+  <!-- Preload fuentes y conexión anticipada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 
@@ -43,7 +53,11 @@
         <h3 class="titulo">Descubre Todo Lo Que Tenemos Para Ti</h3>
         <article class="entrada">
             <div class="entrada__imagen">
-                <img src="img/anime.jpg" alt="imagen blog">
+                <picture>
+                    <source srcset="img/anime.webp" type="image/webp">
+                    <img loading="lazy" src="img/anime.jpg" alt="imagen blog">
+                </picture>
+                
             </div>
             <div class="entrada__contenido">
                 <h4>10 Animes que Todo Fan Debería Ver al Menos una Vez</h4>
@@ -54,7 +68,10 @@
 
         <article class="entrada">
             <div class="entrada__imagen">
-                <img src="img/anime2.jpg" alt="imagen blog">
+                <picture>
+                    <source srcset="img/anime2.webp" type="image/webp">
+                    <img loading="lazy" src="img/anime2.jpg" alt="imagen blog">
+                </picture>
             </div>
             <div class="entrada__contenido">
                 <h4>10 Animes que Todo Fan Debería Ver al Menos una Vez</h4>
@@ -66,7 +83,10 @@
 
         <article class="entrada">
             <div class="entrada__imagen">
-                <img src="img/imagen3.jpg" alt="imagen blog">
+                <picture>
+                    <source srcset="img/imagen3.webp" type="image/webp">
+                    <img loading="lazy" src="img/imagen3.jpg.jpg" alt="imagen blog">
+                </picture>
             </div>
             <div class="entrada__contenido">
                 <h4>El Impacto del Anime en la Cultura Pop Global</h4>
